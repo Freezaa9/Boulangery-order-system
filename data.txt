@@ -1,0 +1,8 @@
+Vegemite Scroll,VS5,3,6.99,0
+Vegemite Scroll,VS5,5,8.99,0
+Blueberry Muffin,MB11,2,9.95,0
+Blueberry Muffin,MB11,5,16.95,0
+Blueberry Muffin,MB11,8,24.95,0
+Croissant,CF,3,5.95,0
+Croissant,CF,5,9.95,0
+Croissant,CF,9,16.99,0

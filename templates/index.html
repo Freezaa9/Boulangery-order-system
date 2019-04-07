@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boulangerie order help</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+
+         input{width: 300px}
+
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;
+        }
+
+    </style>
+  </head>
+  <body>
+
+  <div>
+  <h1> Write the Order </h1>
+  <p>New control system for our Boulangerie. Below our pastries and packs available.</br> Enter the product code and quantity required for the system to generate the order to be delivered </br>with minimum number of packs.</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Pack/Price</th>
+  </tr>
+  <tr>
+    <td>Vegemite Scroll</td>
+    <td>VS5</td>
+    <td>3 @ $6.99 </br>5 @ $8.99</td>
+  </tr>
+    <tr>
+    <td>Blueberry Muffin </td>
+    <td>MB11</td>
+    <td>2 @ $9.95 </br>
+        5 @ $16.95 </br>
+        8 @ $24.95</td>
+  </tr>
+    <tr>
+    <td>Croissant</td>
+    <td>CF</td>
+    <td>3 @ $5.95 </br>
+        5 @ $9.95 </br>
+        9 @ $16.99</td>
+  </tr>
+</table>
+
+      <form action="/" method="POST">
+          Order:<br>
+          <input type="text" name="product" value="MB11"><br>
+          <input type="text" name="quantity" value="14"><br>
+          <input type="submit" value="Generate">
+      </form>
+{{order | safe }}
+  </div>
+  </body>
+</html>
